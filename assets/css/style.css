@@ -53,9 +53,10 @@ figure {padding: 0;margin: 0;}
     h2 {font-size: 4rem;line-height: 1.25; margin-bottom: 20px;}
     h3 {font-size: 2.2rem; line-height: 1.45; font-weight: 600;}
     /* desc */
-    .desc {font-size: 1.8rem; color: inherit; line-height: 1.7;}
+    .desc {font-size: 1.6rem; color: inherit; line-height: 1.7; }
     /* font size moderator */
     .desc--18 {font-size: 1.8rem;}
+    .desc--mb {margin-bottom: 28px;}
     /* pseudo title */
     .pseudo-title {color: var(--pseudoHeading); display: inline-flex; align-items: center; margin-bottom: 12px;}
     .pseudo-title::before {content: ''; display: inline-block; margin-right: 12px; width: 18px;height: 2px; background: var(--pseudoHeading); }
@@ -75,7 +76,7 @@ figure {padding: 0;margin: 0;}
     
     /* buttons */
         /* button1 */
-        .button1 {border-radius: 6px; padding: 15px 30px; color: #fff; transition: background .3s; background: var(--titleColor1); font-weight: 600;} 
+        .button1 {border-radius: 6px; padding: 15px 30px; color: #fff; transition: background .3s; background: var(--titleColor1); font-weight: 600; display: inline-block;} 
         .button1:hover {background: var(--titleColor2);}
         /* button1/reversed */
         .button1--reversed {background: var(--titleColor2); position: relative;}
