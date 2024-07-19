@@ -46,10 +46,15 @@ a, i {
 
 /* headings */
     h1,h2,h3,p {padding: 0;margin: 0;}
+    .common-heading {margin-bottom: 20px;}
+    h1 {font-size: 6rem; color: var(--titleColor1); font-weight: 700; line-height: 1.2;}
     /* desc */
     .desc {font-size: 1.8rem; color: inherit; line-height: 1.7;}
     /* font size moderator */
     .desc--18 {font-size: 1.8rem;}
+    /* pseudo title */
+    .pseudo-title {color: var(--pseudoHeading); display: inline-flex; align-items: center; margin-bottom: 12px;}
+    .pseudo-title::before {content: ''; display: inline-block; margin-right: 12px; width: 18px;height: 2px; background: var(--pseudoHeading); }
 /* page */
     
 /* common selectors */
@@ -64,9 +69,14 @@ a, i {
     /* selections for tabs */
     
     /* buttons */
+        /* button1 */
         .button1 {border-radius: 6px; padding: 15px 30px; color: #fff; transition: background .3s; background: var(--titleColor1); font-weight: 600;} 
         .button1:hover {background: var(--titleColor2);}
-
+        /* button1/reversed */
+        .button1--reversed {background: var(--titleColor2); position: relative;}
+            .button1--reversed span {color: inherit; transition: transform .3s; display: inline-block;}
+            .button1--reversed:hover span { transform: translateX(7.5px);}
+        /* button/hyperlink */
         .hyperlink {font-weight: 600; transition: color .3s;}
         .hyperlink:hover {color: var(--titleColor2);}
         
