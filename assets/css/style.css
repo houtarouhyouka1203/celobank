@@ -36,6 +36,7 @@ a, i {
     text-decoration: none; color: inherit; 
 }
 
+figure {padding: 0;margin: 0;}
 
 /* brands */
     .brand {display: flex; align-items: center; gap: 7px; transition: transform .3s;}
@@ -47,7 +48,10 @@ a, i {
 /* headings */
     h1,h2,h3,p {padding: 0;margin: 0;}
     .common-heading {margin-bottom: 20px;}
-    h1 {font-size: 6rem; color: var(--titleColor1); font-weight: 700; line-height: 1.2;}
+    h1, h2,h3 {color: var(--titleColor1); font-weight: 700;}
+    h1 {font-size: 6rem; line-height: 1.2;}
+    h2 {font-size: 4rem;line-height: 1.25; margin-bottom: 20px;}
+    h3 {font-size: 2.2rem; line-height: 1.45; font-weight: 600;}
     /* desc */
     .desc {font-size: 1.8rem; color: inherit; line-height: 1.7;}
     /* font size moderator */
@@ -60,6 +64,7 @@ a, i {
 /* common selectors */
     /* common margin */
     .common-margin {max-width: 1170px; width: calc((100% - 40px * 2)); margin-left: auto;margin-right: auto; padding-left: 40px;padding-right: 40px;}
+    .common-section {margin-top: 160px; margin-bottom: 160px;}
     /* tabs */
     
     /* logo brand */
