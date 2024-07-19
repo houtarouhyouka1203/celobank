@@ -1,21 +1,26 @@
 :root {
-    
+    --titleColor1: #212832;
+    --titleColor2: #7264D6;
+    --pseudoHeading: #696D77;
+    --normalColor: #696D76;
+    --bg: #ffffff;
 }
 
 ::selection{
-    background: transparent; color: #bc2f00;
+    background: transparent; color: #440354;
 }
 ::-webkit-scrollbar {background: transparent; width: 7px; height: 7px;}
-::-webkit-scrollbar-thumb {background: var(--hyper-cta); width: 7px; height: 7px; border-radius: 3.5px;}
+::-webkit-scrollbar-thumb {background: var(--titleColor2); width: 7px; height: 7px; border-radius: 3.5px;}
 
 html {font-size: 62.5%;}
 html,body {scroll-behavior: smooth;}
 a {text-decoration: none;}
 ul {list-style-type: none; padding: 0; margin: 0;text-indent: 0;}
 
-body {
-    color: var(--normal-text); font-size: 1.6rem; font-family: var(--normal-font); font-weight: 400;
+body, body * {
+    color: var(--normalColor); font-size: 1.6rem; font-family: "Open Sans", sans-serif; font-weight: 400;
 }
+
 
 input, button {
     outline: none; padding: 0;margin: 0;border: 0;
@@ -32,13 +37,24 @@ a, i {
 }
 
 
-/* headings */
+/* brands */
+    .brand {display: flex; align-items: center; gap: 7px; transition: transform .3s;}
+    .brand__icon {width: 24px; display: inline-block;}
+    .brand__title {color: #000; font-weight: 600; transition: color .3s;}
+    .brand:hover {transform: scale(1.1);}
+    .brand:hover .brand__title {color: var(--titleColor2);}
 
+/* headings */
+    h1,h2,h3,p {padding: 0;margin: 0;}
+    /* desc */
+    .desc {font-size: 1.8rem; color: inherit; line-height: 1.7;}
+    /* font size moderator */
+    .desc--18 {font-size: 1.8rem;}
 /* page */
     
 /* common selectors */
-    /* content margin */
-    
+    /* common margin */
+    .common-margin {max-width: 1170px; width: calc((100% - 40px * 2)); margin-left: auto;margin-right: auto; padding-left: 40px;padding-right: 40px;}
     /* tabs */
     
     /* logo brand */
@@ -48,5 +64,9 @@ a, i {
     /* selections for tabs */
     
     /* buttons */
-        
+        .button1 {border-radius: 6px; padding: 15px 30px; color: #fff; transition: background .3s; background: var(--titleColor1); font-weight: 600;} 
+        .button1:hover {background: var(--titleColor2);}
+
+        .hyperlink {font-weight: 600; transition: color .3s;}
+        .hyperlink:hover {color: var(--titleColor2);}
         
