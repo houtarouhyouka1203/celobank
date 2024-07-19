@@ -17,7 +17,7 @@
             .header__button {padding: 12px 28px;}
     
     /* section/hero */
-    .hero {height: calc(100% - 130px); max-height: 900px; min-height: 650px; display: grid; align-items: center;}
+    .hero {height: calc(100vh - 130px); max-height: 900px; min-height: 650px; display: grid; align-items: center;}
     .hero__wrapper { display: flex; align-items: stretch; justify-content: space-between;}
         .hero__heading {max-width: 540px; width: 50%;}
             .hero__desc {margin-bottom: 40px;}
