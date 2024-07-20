@@ -46,17 +46,17 @@
                     .figure3__txt p {font-size: 0.8rem;}
     /* main section */
     /* main/how-it-works */
-    .hiw__wrapper {display: flex; align-items: stretch; justify-content: space-between;}
+    .hiw__wrapper {display: flex; align-items: stretch; justify-content: space-between; gap: 130px;}
         /* hiw/heading */
         .hiw__heading {max-width: 470px; width: 45%;margin: 29px 0;}
             .hiw__title {margin-bottom: 70px;}
             .hiw__list {display: grid; grid-gap: 30px;}
                 .hiw__item {display: grid; grid-gap: 16px;}
         /* hiw/figure */
-        .hiw__figure {flex-grow: 1; position: relative;}
-            .hiw__bg {width: 470px;height: 550px; position: absolute;left: 0;bottom: 0;; background: url(./assets/img/page_landing/hiw/man-bg.svg) left bottom / contain no-repeat;}
-                .hiw__man {width: 100%;;position: absolute; bottom: 0;left: 0;}
-            .hiw__card {width: 64px; position: absolute; top: 76px; right: 55px;}
+        .hiw__figure {flex-grow: 1; position: relative; }
+            .hiw__bg {width: calc(100% - 107px); max-height: 550px;; aspect-ratio: 47/55; position: absolute;left: 0;bottom: 0;; background: url(./assets/img/page_landing/hiw/man-bg.svg) left bottom / cover no-repeat; margin-right: 107px;}
+                .hiw__man {width: 100%; max-height: 550px; object-fit: contain; object-position: center bottom;position: absolute; bottom: 0;left: 0;}
+            .hiw__card {width: 64px; position: absolute; top: 7px; right: 62px;}
             .hiw__congrats {position: absolute; bottom: 96px; right: -107px; display: flex; align-items: center; gap: 10px;padding: 15px; background: var(--bg);box-shadow: 0px 14px 34px 0px rgba(0, 0, 0, 0.07); border-radius: 8px;}
                 .hiw__txt {display: grid; gap: 5px;}
                 .hiw__txt * {display: block; font-family: "Inter", sans-serif;}
