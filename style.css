@@ -131,7 +131,23 @@
                 .blogs__thumb {width: 160px; height: 160px;border-radius: 12px; object-fit: cover; object-position: center center; transition: filter .3s, transform .3s;}
                 .blogs__dt {margin-bottom: 10px; font-size: 1.4rem;}
                 .blogs__name {margin-bottom: 20px; font-size: 1.8rem;}
-
+    /* main/call-to-action */
+    .cta {margin-top: 160px; margin-bottom: 100px;}
+    .cta__wrapper {display: flex; align-items: center; flex-direction: column; justify-content: center; padding: 100px 35px;border-radius: 24px; background: var(--titleColor2); color: #fff; position: relative; z-index: 1;}
+    .cta__wrapper * {color: inherit; text-align: center;} .cta__wrapper *::before {background: #fff;}
+        .cta__heading {z-index: 11;}
+            .cta__pseudo {display: flex; justify-content: center;}
+            .cta__title {margin-bottom: 18px;}
+            .cta__desc {max-width: 435px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient:vertical; overflow: hidden; margin-bottom: 38px;}
+            .cta__app {display: flex; align-items: center; gap: 16px; align-items: center; justify-content: center;}
+                .cta__store {transition: transform .3s;}
+                .cta__store:hover {transform: scale(1.12);}
+        .cta__bg {position: absolute; width: 100%; height: 100%; overflow: hidden; border-radius: 24px; top: 0; left: 0;}
+            .cta__bg img:nth-child(1) {position: absolute; top: 49px;left: 112px;}
+            .cta__bg img:nth-child(2) {position: absolute; top: 49px;right: 112px;}
+            .cta__bg img:nth-child(3) {position: absolute; bottom: 49px;left: 166px;}
+            .cta__bg img:nth-child(4) {position: absolute; bottom: 49px;right: 166px;}
+        
             
 
 
