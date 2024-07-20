@@ -92,6 +92,9 @@ figure {padding: 0;margin: 0;}
         /* button/hyperlink2 */
         .hyperlink2 {transition: color .3s;}
         .hyperlink2:hover {color: var(--titleColor2);}
+        /* button/hyperlink3 */
+        .hyperlink3 {transition: color .3s; color: #6A6E78; line-height: 1.67; font-size: 1.8rem;text-decoration: underline;}
+        .hyperlink3:hover {color: var(--titleColor2);}
     /* list */
     .list {display: grid; grid-gap: 18px; margin-bottom: 38px;}
         .list__item {font-size: 1.8rem; font-weight: 600; line-height: 1.7; color: var(--titleColor1); display: inline-flex; align-items: center;}
