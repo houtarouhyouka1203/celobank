@@ -84,7 +84,7 @@
     /*  main/feature-02  */
     .f2__wrapper {display: flex; align-items: stretch; justify-content: space-between; gap: 130px; }
         /* f2/heading */
-        .f2__heading {max-width: 470px; display: flex; flex-direction: column; justify-content: center;    align-items: flex-start;}
+        .f2__heading {max-width: 470px;}
         /* f2/figure */
         .f2__figure {flex-grow: 1; position: relative; height: 600px;}
             .f2__bg {position: absolute; width: calc(100% - 100px); height: 100%; margin-right: 100px; bottom: 0;left: 0; background: url(./assets/img/page_landing/f2/woman-bg.svg) left bottom / contain no-repeat;}

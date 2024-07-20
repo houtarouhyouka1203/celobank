@@ -66,6 +66,7 @@ figure {padding: 0;margin: 0;}
     /* common margin */
     .common-margin {max-width: 1170px; width: calc((100% - 40px * 2)); margin-left: auto;margin-right: auto; padding-left: 40px;padding-right: 40px;}
     .common-section {margin-top: 160px; margin-bottom: 160px;}
+    .heading-align {display: flex; flex-direction: column; justify-content: center;align-items: flex-start;}
     /* tabs */
     
     /* logo brand */
