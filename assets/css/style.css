@@ -85,4 +85,8 @@ figure {padding: 0;margin: 0;}
         /* button/hyperlink */
         .hyperlink {font-weight: 600; transition: color .3s;}
         .hyperlink:hover {color: var(--titleColor2);}
+    /* list */
+    .list {display: grid; grid-gap: 18px; margin-bottom: 38px;}
+        .list__item {font-size: 1.8rem; font-weight: 600; line-height: 1.7; color: var(--titleColor1); display: inline-flex; align-items: center;}
+        .list__item::before {content: ''; display: inline-block; width: 12px;height: 12px;border-radius: 50%;margin-right: 12px;background: var(--titleColor2);}
         

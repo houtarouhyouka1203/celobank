@@ -65,9 +65,7 @@
     /* main/feature-01 */
     .f1__wrapper {display: flex; align-items: stretch; grid-gap: 130px;}
         .f1__heading {max-width: 470px; width: 48%;}
-            .f1__list {display: grid; grid-gap: 18px; margin-bottom: 38px;}
-                .f1__item {font-size: 1.8rem; font-weight: 600; line-height: 1.7; color: var(--titleColor1); display: inline-flex; align-items: center;}
-                .f1__item::before {content: ''; display: inline-block; width: 12px;height: 12px;border-radius: 50%;margin-right: 12px;background: var(--titleColor2);}
+            
         .f1__figure {flex-grow: 1; display: flex; align-items: center; justify-content: flex-start;}
             .f1__card {width: 482px;height: 322px; background: url(./assets/img/page_landing/f1/card.png) center / contain no-repeat; position: relative;}
                 /* card item 1 */
@@ -83,4 +81,17 @@
                     .f1__cardItem2-img {width: 30px; display: block; margin-bottom: 14px;}
                     .f1__cardItem2 p:first-of-type {color: #fff; font-size: 1.2rem; margin-bottom: 6px;}
                     .f1__cardItem2 p:last-of-type {color: #fff; font-size: 1.8rem; font-weight: 600;}
-                        
+    /*  main/feature-02  */
+    .f2__wrapper {display: flex; align-items: stretch; justify-content: space-between; gap: 130px; }
+        /* f2/heading */
+        .f2__heading {max-width: 470px; display: flex; flex-direction: column; justify-content: center;    align-items: flex-start;}
+        /* f2/figure */
+        .f2__figure {flex-grow: 1; position: relative; height: 600px;}
+            .f2__bg {position: absolute; width: calc(100% - 100px); height: 100%; margin-right: 100px; bottom: 0;left: 0; background: url(./assets/img/page_landing/f2/woman-bg.svg) left bottom / contain no-repeat;}
+                .f2__woman {position: absolute; width: 100%; max-width: 413px;  bottom: 0; left: 0;}
+            /* f2/figure/payment */
+            .f2__payment {position: absolute; bottom: 57px;right: -74px;filter: drop-shadow(0px 44px 48px rgba(0, 0, 0, 0.10)); border-radius: 8px; background: var(--bg); padding: 28px;}
+                .f2__paymentTitle {font-size: 1.8rem;font-weight: 600;color: var(--titleColor1); margin-bottom: 20px; }
+                .f2__paymentList {display: grid; width: 100%; grid-template-columns: repeat(3, 63px); grid-gap: 18px;}
+                .f2__currency {position: absolute; top: -35px;right: -26px; width: 90px;height: 90px;background: var(--titleColor2); border-radius: 50%; display: flex; align-items: center; justify-content: center;}
+
