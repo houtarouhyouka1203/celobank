@@ -48,7 +48,7 @@ figure {padding: 0;margin: 0;}
 /* headings */
     h1,h2,h3,p {padding: 0;margin: 0;}
     .common-heading {margin-bottom: 20px;}
-    h1, h2,h3 {color: var(--titleColor1); font-weight: 700;}
+    h1, h2, h3 {color: var(--titleColor1); font-weight: 700;}
     h1 {font-size: 6rem; line-height: 1.2;}
     h2 {font-size: 4rem;line-height: 1.25; margin-bottom: 20px;}
     h3 {font-size: 2.2rem; line-height: 1.45; font-weight: 600;}
@@ -74,7 +74,10 @@ figure {padding: 0;margin: 0;}
     /* navigations */
     
     /* selections for tabs */
-    
+    .select {display: flex; align-items: center; gap: 12px;}
+        .select__item {width: 22px; height: 6px; box-sizing: border-box; border: 1px solid #9B9FAB; transition: background .3s, border .3s; border-radius: 1px;}
+        .select__item:hover {background: #9b9fab;}
+        .select__item[selected] {background: var(--titleColor2); border-color: var(--titleColor2);}
     /* buttons */
         /* button1 */
         .button1 {border-radius: 6px; padding: 15px 30px; color: #fff; transition: background .3s; background: var(--titleColor1); font-weight: 600; display: inline-block;} 
