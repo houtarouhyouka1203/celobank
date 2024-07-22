@@ -1,0 +1,75 @@
+/* animations for celobank webproject */
+
+.animation__appearance {opacity: 0;}
+
+.a__floatLeft {
+    animation: floatLeft .5s ease-out;
+    animation-fill-mode: forwards;
+} 
+.a__floatUp {
+    animation: floatUp .5s ease-out;
+    animation-fill-mode: forwards;
+} 
+.a__fade {
+    animation: fade .3s ease-out;
+    animation-fill-mode: forwards;
+}
+@media all and (max-width: 850px) {
+.a__blurIn {
+    animation: blurIn .3s ease-out;
+    animation-fill-mode: forwards;
+} 
+}
+span.a__colorChange::before {
+    animation: h1-em .5s 2.25s ease-out, colorChange 10s 2s infinite alternate ; 
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes h1-em {
+    0% {
+        color: var(--titleColor1)
+    }
+    100% {
+        width: 100%; left: 0; color: #7264D6;
+    }
+}
+@-webkit-keyframes colorChange{
+    0% {color: #7264D6}
+    20% {color: #aabbcc}
+    40% {color: #19538c}
+    60% {color: #fb03ff}
+    80% {color: #022d58}
+    100% {color: #6000c6}
+}
+@-webkit-keyframes floatLeft {
+    0% {
+        opacity: 0;transform: translateX(-30px);
+    }
+    100% {
+        opacity: 1;transform: translateX(0);
+    }
+}
+@-webkit-keyframes floatUp {
+    0% {
+        opacity: 0;transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;transform: translateY(0);
+    }
+}
+@-webkit-keyframes fade {
+    0% {opacity: 0;} 
+    100% {opacity: 1;}
+}
+@-webkit-keyframes blurIn {
+    0% {filter: blur(0);} 
+    100% {filter: blur(15px);}
+}
+
+@-webkit-keyframes colorChange-Blue {
+    0% {background: transparent} 100% {background: var(--titleColor2);}
+}
+@-webkit-keyframes colorChange-White {
+    0% {--pseudoHeading: #696D77;--titleColor1: #212832;--normalColor: #696D76;}
+    100% {--pseudoHeading: #cbcbcb;--titleColor1: #ffffff;--normalColor: #e7e7e7;}
+}
