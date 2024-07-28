@@ -59,7 +59,37 @@
                     <a href="#!" class="hyperlink header__hyperlink">Log in</a>
                     <a href="#!" class="button1 header__button">Sign up</a>
                 </div>
-                <a href="#!" class="header__dropMenu"><i class="fa-solid fa-bars"></i></a>
+                <label for="toggleMenu" href="#!" class="header__dropMenu">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+            </div>
+        </header>
+        <!-- tablet and mobile only -->
+        
+        <header class="header--tM">
+            <input type="checkbox" name="toggleMenu" id="toggleMenu" style="display: none;">
+            <div class="header__bg">
+                <label for="toggleMenu" class="header__close">
+                    <img src="./assets/img/logo/cross.svg" style="fill: white;" alt="">
+                </label>
+            </div>
+            <div for="toggleMenu" class="header__wrapper--tM">
+                <nav class="header__menu-bar--tM">
+                    <ul>
+                        <li>
+                            <a href="#!" title="Home">Home</a>
+                        </li>
+                        <li>
+                            <a href="#!" title="Products">Products</a>
+                        </li>
+                        <li>
+                            <a href="#!" title="Features">Features</a>
+                        </li>
+                        <li>
+                            <a href="#!" title="Blog">Blog</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </header>
 

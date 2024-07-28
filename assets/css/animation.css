@@ -73,3 +73,8 @@ span.a__colorChange::before {
     0% {--pseudoHeading: #696D77;--titleColor1: #212832;--normalColor: #696D76;}
     100% {--pseudoHeading: #cbcbcb;--titleColor1: #ffffff;--normalColor: #e7e7e7;}
 }
+
+@keyframes spin {
+    0% {transform: rotate(0)}
+    100% {transform: rotate(0360deg)}
+}

@@ -16,9 +16,23 @@
         .header__cta {margin-left: auto; display: flex; align-items: center; gap: 28px;}
             .header__button {padding: 12px 28px;}
         /* header/button dropdown menu */
-        .header__dropMenu {padding: 12px; margin-left: 24px; border-radius: 8px; background: #f0f0f0; aspect-ratio: 1 / 1; display: inline-flex; align-items: center; justify-content: center; width: 18px; transition: background .3s; display: none;}
+        .header__dropMenu {padding: 12px; margin-left: 24px; border-radius: 8px; background: #f0f0f0; aspect-ratio: 1 / 1; display: inline-flex; align-items: center; justify-content: center; width: 18px; transition: background .3s; display: none; cursor: pointer;}
             .header__dropMenu:hover {background: #ddd;}
-    
+
+    /* header [for tablet and mobile] */
+        .header--tM {display: none; position: fixed; padding: 0;margin: 0; background: none; }
+            /* .header__overlay {position: fixed; inset: 0; background: rgba(0, 0, 0, 0.3); cursor: pointer; } */
+            .header__wrapper--tM{ position: fixed; inset: 0; background: var(--bg); border-bottom-right-radius: 14px; display: block; opacity: 0; visibility: hidden; z-index: 11; transform: translateY(-100%);}
+                .header__menu-bar--tM {width: 100%; box-sizing: border-box; padding: 40px;}
+                .header__menu-bar--tM ul {display: grid; row-gap: 30px;}
+                    .header__menu-bar--tM a {position: absolute; left: 0;display: inline-flex; align-items: center; padding: 5px; font-size: 2.2rem; font-weight: 500;  transition: transform .3s, color .3s; position: relative;} 
+                    .header__menu-bar--tM a::before {content: ''; display: block; width: 3px;height: 25px; background: var(--titleColor1); position: absolute; left: 0; transition: transform .3s; transform: scaleY(0); transform-origin: center bottom;}
+                    .header__menu-bar--tM a:hover {color: var(--titleColor2); transform: translateX(15px);}
+                    .header__menu-bar--tM a:hover::before {transform: scaleY(1) translateX(-15px);}
+                .header__bg {position: relative; width: 100vw; height: 100vh; display: none; background: none;}
+                .header__close {width: 400px;aspect-ratio: 1/1; border-radius: 50%; background: var(--titleColor1); color: #fff; display: flex; align-items: center; justify-content: center; position: absolute;bottom: -230px;right: -186px; z-index: 100; opacity: 0; visibility: hidden; transition: 2s; animation: spin 3s linear infinite; cursor: pointer;}
+                    .header__close img {width: 100%; height: 100%; filter: brightness(111);}
+                .header__close:hover {width: 470px;}
     /* section/hero */
     .hero {height: calc(100vh - 130px); max-height: 990px; min-height: 800px; display: grid; align-items: center;}
     .hero__wrapper { display: flex; align-items: stretch; justify-content: space-between; gap: 25px;}
@@ -218,8 +232,17 @@
 
 @media all and (max-width: 850px) {
     /* header */
+
         .menu-bar {display: none;}
         .header__dropMenu {display: inline-flex;}
+        /* header [for tablet and mobile only] */
+        .header__wrapper--tM {transition: all .3s;}
+        .header--tM {display: block;}
+        #toggleMenu:checked ~ .header__bg{display: block;}
+        #toggleMenu:checked ~ .header__wrapper--tM {opacity: 1; visibility: visible; transform: translateY(0)}
+        #toggleMenu:checked ~ .header__bg > .header__close {opacity: 1; visibility: visible;}
+        
+
     /* main */
         /* main/how-it-works */
         .hiw {margin-top: 0;}
