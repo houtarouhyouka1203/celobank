@@ -31,7 +31,7 @@
                     .header__menu-bar--tM a:hover::before {transform: scaleY(1) translateX(-15px);}
                 .header__bg {position: relative; width: 100vw; height: 100vh; display: none; background: none;}
                 .header__close {width: 400px;aspect-ratio: 1/1; border-radius: 50%; background: var(--titleColor1); color: #fff; display: flex; align-items: center; justify-content: center; position: absolute;bottom: -230px;right: -186px; z-index: 100; opacity: 0; visibility: hidden; transition: 2s; animation: spin 3s linear infinite; cursor: pointer;}
-                    .header__close img {width: 100%; height: 100%; filter: brightness(111);}
+                    .header__close img {width: 101%; height: 100%; border-radius: 50%;}
                 .header__close:hover {width: 470px;}
     /* section/hero */
     .hero {height: calc(100vh - 130px); max-height: 990px; min-height: 800px; display: grid; align-items: center;}
